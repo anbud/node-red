@@ -1,0 +1,21 @@
+{
+  "name": "node-red-hf",
+  "version": "0.0.5",
+  "description": "Hyperledger Fabric write node",
+  "main": "hf.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "red",
+    "hyperledger",
+    "fabric",
+    "node-red"
+  ],
+  "author": "Andrej Budincevic <andrej.budincevic@vizlore.com>",
+  "license": "ISC",
+  "dependencies": {
+    "got": "^9.2.2"
+  }
+}

@@ -1,0 +1,44 @@
+<script type="text/javascript">
+    RED.nodes.registerType('hf-write',{
+        category: 'function',
+        color: '#a6bbcf',
+        defaults: {
+            channel: {
+                value: 'sensors'
+            },
+            chaincode: {
+                value: 'sensorscc'
+            },
+            fcn: {
+                value: 'changeSensorValue'
+            },
+            id: {
+                value: 'Sensor0'
+            }
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: 'hf.png',
+        label: () => 'HF'
+    })
+</script>
+
+<script type="text/x-red" data-template-name="hf">
+    <div class="form-row">
+        <label for="node-input-id"><i class="icon-tag"></i> Data ID</label>
+        <input type="text" id="node-input-id" placeholder="Name">
+
+        <label for="node-input-channel"><i class="icon-channel"></i> Channel</label>
+        <input type="text" id="node-input-channel" placeholder="Channel">
+
+        <label for="node-input-chaincode"><i class="icon-gears"></i> Chaincode</label>
+        <input type="text" id="node-input-chaincode" placeholder="Chaincode">
+
+        <label for="node-input-fcn"><i class="icon-function"></i> Function</label>
+        <input type="text" id="node-input-fcn" placeholder="Function">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="hf">
+    <p>A simple node that writes the payload to a HF blockchain and returns the same payload.</p>
+</script>

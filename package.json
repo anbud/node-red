@@ -1,6 +1,6 @@
 {
-  "name": "node-red-hf",
-  "version": "0.0.5",
+  "name": "node-red-contrib-agile-hf",
+  "version": "0.0.8",
   "description": "Hyperledger Fabric write node",
   "main": "hf.js",
   "scripts": {
